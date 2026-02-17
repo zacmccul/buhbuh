@@ -44,10 +44,6 @@ export default [
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
-      '@typescript-eslint/explicit-function-return-types': [
-        'warn',
-        { allowExpressions: true, allowTypedFunctionExpressions: true },
-      ],
 
       // React specific
       'react/react-in-jsx-scope': 'off', // Not needed in React 17+
