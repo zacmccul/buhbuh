@@ -1,0 +1,36 @@
+# Encryption and .gitignore configuration
+
+## This file should be appended to your .gitignore
+## It ensures that only encrypted (.enc) files are committed, not originals
+
+# Prevent committing unencrypted content files
+public/poems/*
+public/music/*
+public/art/*
+public/pictures/*
+public/writing/*
+
+# But allow .enc files (encrypted)
+!public/poems/*.enc
+!public/music/*.enc
+!public/art/*.enc
+!public/pictures/*.enc
+!public/writing/*.enc
+
+# Allow hidden files that might be in these directories
+!public/poems/.gitkeep
+!public/music/.gitkeep
+!public/art/.gitkeep
+!public/pictures/.gitkeep
+!public/writing/.gitkeep
+
+# Never commit unencrypted environment files
+.env
+.env.local
+.env.*.local
+
+# Development
+.DS_Store
+*.swp
+*.swo
+*~
