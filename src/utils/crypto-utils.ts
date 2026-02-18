@@ -10,14 +10,13 @@
 
 // Type declarations for browser APIs
 declare const TextEncoder: typeof globalThis.TextEncoder;
-declare const TextDecoder: typeof globalThis.TextDecoder;
 declare function btoa(data: string): string;
 declare function atob(data: string): string;
 
 type Pbkdf2Params = {
   name: 'PBKDF2';
   hash: string;
-  salt: BufferSource;
+  salt: Uint8Array;
   iterations: number;
 };
 
